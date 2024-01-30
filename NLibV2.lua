@@ -685,7 +685,7 @@ uICorner8.Name = "UICorner"
 uICorner8.CornerRadius = UDim.new(0, 3)
 uICorner8.Parent = rightContainer
 
-function tab:Section(Info)
+function tab:MakeSection(Info)
 Info.Text = Info.Text or "Section"
 Info.Side = Info.Side or "Left"
 
@@ -998,7 +998,7 @@ textButton.MouseButton1Click:Connect(function()
 end)
 end
 
-function sectiontable:Input(Info)
+function sectiontable:MakeTextBox(Info)
 Info.Placeholder = Info.Placeholder or "Input"
 Info.Flag = Info.Flag or nil
 Info.Callback = Info.Callback or function() end
