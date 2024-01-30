@@ -162,7 +162,7 @@ function library:GetXY(GuiObject)
 	return Px/Max, Py/May
 end
 
-function library:Window(Info)
+function library:MakeWindow(Info)
 Info.Text = Info.Text or "Shaman"
 
 local window = {}
